@@ -3,33 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LuvEco — Hand-block-printed cotton bags & accessories from Jaipur</title>
-  <meta name="description" content="Hand-block-printed, hand-quilted cotton tote bags, slippers, pouches, sunglasses cases and bag charms. Made by artisans in Jaipur, shipped from the UK.">
+  <title>LuvEco — Hand-block-printed cotton bags & gifts from Jaipur</title>
+  <meta name="description" content="Joyful hand-block-printed, hand-quilted cotton tote bags, slippers, pouches, sunglasses cases and bag charms. Made by artisans in Jaipur, shipped from the UK.">
   <link rel="canonical" href="https://www.luveco.co.uk/">
-
   <meta property="og:title" content="LuvEco — Hand-block-printed cotton from Jaipur">
-  <meta property="og:description" content="Hand-printed tote bags, slippers, pouches and more. Made in Jaipur, shipped from the UK.">
+  <meta property="og:description" content="Joyful hand-printed cotton bags, slippers, pouches and gifts. Made in Jaipur, shipped from the UK.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.luveco.co.uk/">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ====================== ANNOUNCEMENT BAR ====================== -->
 <div class="announce" role="region" aria-label="Announcements">
-  <p>Free UK delivery on orders over £50 &nbsp;·&nbsp; 10% off your first order when you join the list</p>
+  <p>Free UK delivery over <strong>£50</strong> &nbsp;·&nbsp; <strong>10% off</strong> your first order when you join the list</p>
 </div>
 
-<!-- ====================== HEADER ====================== -->
 <header class="site-header">
   <div class="container header-inner">
     <a href="/" class="logo" aria-label="LuvEco home">
-      <img src="luveco-logo-wordmark.png" alt="LuvEco" width="170" height="65">
+      <img src="luveco-logo-wordmark.png" alt="LuvEco" width="172" height="66">
     </a>
     <nav class="site-nav" aria-label="Primary">
       <a href="#tote-bags">Totes</a>
@@ -40,7 +35,7 @@
       <a href="#story">Our story</a>
     </nav>
     <button class="cart-button" id="cart-open" aria-label="Open basket">
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M3 6h18l-2 13H5L3 6z"/><path d="M8 6V5a4 4 0 0 1 8 0v1"/>
       </svg>
       <span class="cart-count" id="cart-count" hidden>0</span>
@@ -50,83 +45,91 @@
 
 <main id="main">
 
-<!-- ====================== HERO ====================== -->
 <section class="hero">
   <div class="container hero-inner">
     <div class="hero-text">
-      <h1>Two thousand years of print.<br><em>Made for everyday.</em></h1>
-      <p class="hero-sub">Hand-block-printed and hand-quilted cotton — totes, slippers, pouches, cases and charms. Made by artisans in Jaipur. Shipped from the UK.</p>
-      <div class="cta-row">
-        <a href="#tote-bags" class="btn btn-primary">Shop bestsellers</a>
-        <a href="#story" class="btn-text">How it's made</a>
+      <p class="eyebrow">Hand-printed in Jaipur · Shipped from the UK</p>
+      <h1>Colour you can<br><em>carry everywhere.</em></h1>
+      <p class="hero-sub">Hand-block-printed, hand-quilted cotton — totes, slippers, pouches, cases and charms. Joyful prints, made by artisans, no two quite the same.</p>
+      <div class="hero-cta">
+        <a href="#tote-bags" class="btn btn-coral">Shop bestsellers</a>
+        <a href="#story" class="link-underline">How it's made</a>
       </div>
     </div>
     <div class="hero-media">
-      <!--
-        HERO PHOTO SLOT — replace hero.jpg with your best lifestyle shot:
-        a bag carried in natural light, or a flat-lay of the full range.
-        Recommended: 1200x1000px or larger, JPG.
-      -->
-      <img src="products/hero.jpg" alt="LuvEco hand-block-printed cotton bags and accessories"
-           onerror="this.parentElement.classList.add('media-missing'); this.remove();">
-      <div class="media-placeholder" aria-hidden="true">
-        <img src="luveco-logo-decorative.png" alt="" class="placeholder-logo">
+      <span class="hero-dot d1" aria-hidden="true"></span>
+      <span class="hero-dot d2" aria-hidden="true"></span>
+      <span class="hero-dot d3" aria-hidden="true"></span>
+      <div class="hero-frame media-missing">
+        <img src="products/hero.jpg" alt="A LuvEco hand-block-printed cotton tote in bright florals"
+             onload="this.closest('.hero-frame').classList.remove('media-missing');"
+             onerror="this.remove();">
+        <div class="hero-ph" aria-hidden="true">
+          <img src="luveco-logo-decorative.png" alt="">
+          <p>Your hero photo goes here</p>
+          <span>products/hero.jpg</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====================== TRUST STRIP ====================== -->
-<div class="trust-strip" role="region" aria-label="Why shop with us">
+<div class="trust" role="region" aria-label="Why shop with us">
   <div class="container trust-inner">
-    <p><strong>100% cotton</strong> · azo-free dyes</p>
-    <p><strong>Hand-printed</strong> in Sanganer, Jaipur</p>
-    <p><strong>No plastic</strong> — even the packaging</p>
-    <p><strong>UK returns</strong> · 30 days</p>
+    <p>100% cotton <span>· azo-free dyes</span></p>
+    <p>Hand-printed <span>in Sanganer, Jaipur</span></p>
+    <p>No plastic <span>· even the packaging</span></p>
+    <p>UK returns <span>· 30 days</span></p>
   </div>
 </div>
 
-<!-- ====================== PRODUCT SECTIONS (rendered from products.js) ====================== -->
+<!-- Product colour-worlds render here from products.js -->
 <div id="shop-sections"></div>
 
-<!-- ====================== STORY ====================== -->
 <section class="story" id="story">
-  <div class="container story-inner">
+  <div class="container">
     <div class="story-media">
-      <img src="luveco-logo-decorative.png" alt="LuvEco decorative emblem — quilled flowers, embroidered roses and a bird in botanical colours">
+      <img src="luveco-logo-decorative.png" alt="LuvEco emblem — quilled flowers, embroidered roses and a bird in botanical colours">
     </div>
     <div class="story-text">
-      <h2>Six blocks. Three colours. One piece.</h2>
-      <p>Every LuvEco print starts with a wooden block carved by hand in a workshop outside Jaipur. One block per colour, lined up by eye on the cotton, pressed hundreds of times across a single bolt.</p>
-      <p>The tiny shifts where blocks land slightly differently between repeats aren't flaws. They're the marks of the hand — proof no machine was involved.</p>
-      <p>The printed cotton is hand-quilted, cut and finished in small workshops in Sanganer, then packed in cotton — no plastic — and shipped from our UK studio.</p>
-      <a href="#tote-bags" class="btn btn-secondary">Shop the craft</a>
+      <p class="eyebrow">How it's made</p>
+      <h2>Six blocks. Three colours.<br>One you.</h2>
+      <p>Every LuvEco print starts with a wooden block carved by hand in a workshop outside Jaipur — one block for each colour, pressed by hand across the cotton, hundreds of times.</p>
+      <p>The tiny shifts where the blocks meet aren't flaws. They're the fingerprints of the maker — proof that a person, not a machine, made the thing you're carrying.</p>
+      <a href="#tote-bags" class="btn btn-coral">Shop the collection</a>
     </div>
   </div>
 </section>
 
-<!-- ====================== NEWSLETTER ====================== -->
-<section class="newsletter">
-  <div class="container newsletter-inner">
-    <h2>Hear when new prints land.</h2>
-    <p>Join the list for 10% off your first order. No spam — just new arrivals and the occasional story from Jaipur.</p>
-    <form class="newsletter-form" id="newsletter-form">
+<section class="gift">
+  <div class="container gift-inner">
+    <p class="eyebrow">Made to be given</p>
+    <h2>The gift that tells a story.</h2>
+    <p>Every piece arrives wrapped in cotton, with a card naming the artisan who made it. A present that feels personal before it's even opened.</p>
+    <a href="#bag-charms" class="btn btn-primary">Shop gifts under £20</a>
+  </div>
+</section>
+
+<section class="news">
+  <div class="container news-inner">
+    <h2>Join the LuvEco list</h2>
+    <p>10% off your first order, plus first look at new prints and the occasional story from Jaipur.</p>
+    <form class="news-form" id="newsletter-form">
       <label for="newsletter-email" class="visually-hidden">Email address</label>
       <input type="email" id="newsletter-email" placeholder="you@example.com" required>
-      <button type="submit" class="btn btn-primary">Join the list</button>
+      <button type="submit" class="btn">Join &amp; save 10%</button>
     </form>
-    <p class="newsletter-note" id="newsletter-note" hidden>Thanks — you're on the list. (Note: this form needs connecting to an email service like Mailchimp before launch.)</p>
+    <p class="news-note" id="newsletter-note" hidden>You're on the list — welcome. (This form needs connecting to an email service like Mailchimp before launch.)</p>
   </div>
 </section>
 
 </main>
 
-<!-- ====================== FOOTER ====================== -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
+<footer class="footer">
+  <div class="container footer-top">
+    <div>
       <p class="footer-logo">LUVECO</p>
-      <p class="footer-tagline">Two thousand years of print, in your everyday.</p>
+      <p class="footer-tag">Colour you can carry everywhere.</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <div>
@@ -157,7 +160,6 @@
   </div>
 </footer>
 
-<!-- ====================== CART DRAWER ====================== -->
 <div class="cart-overlay" id="cart-overlay" hidden></div>
 <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping basket" hidden>
   <div class="cart-head">
@@ -170,9 +172,7 @@
     <p class="cart-subtotal">Subtotal <strong id="cart-subtotal">£0.00</strong></p>
     <p class="cart-small">Delivery calculated at checkout.</p>
     <button class="btn btn-primary btn-full" id="checkout-btn">Checkout</button>
-    <p class="cart-small" id="checkout-note" hidden>
-      Checkout isn't wired to a payment provider yet. Options: Shopify, Stripe Payment Links, or Snipcart — ask Claude to set one up.
-    </p>
+    <p class="cart-small" id="checkout-note" hidden>Checkout isn't connected to a payment provider yet. Options: Shopify, Stripe Payment Links, or Snipcart — ask Claude to set one up.</p>
   </div>
 </aside>
 
